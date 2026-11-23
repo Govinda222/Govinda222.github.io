@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Govinda Upadhyay | CS &amp; Data Analytics Portfolio</title>
+
+  <!-- inline SVG favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e1e1f'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffdb70' font-family='sans-serif' font-weight='bold' font-size='28'%3EGU%3C/text%3E%3C/svg%3E">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- #MAIN -->
+  <main>
+
+    <!-- #SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box" style="overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          <img src="https://github.com/Govinda222.png" alt="Govinda Upadhyay" width="80" style="border-radius: 20px; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <svg style="display: none;" width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="120" height="120" rx="24" fill="#232325"/>
+            <rect x="28" y="34" width="64" height="44" rx="8" stroke="#FFDB70" stroke-width="4"/>
+            <path d="M48 50L39 56L48 62" stroke="#FFDB70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M72 50L81 56L72 62" stroke="#FFDB70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M63 46L57 66" stroke="#FFDB70" stroke-width="4" stroke-linecap="round"/>
+            <path d="M44 88H76" stroke="#FFDB70" stroke-width="4" stroke-linecap="round"/>
+            <path d="M60 78V88" stroke="#FFDB70" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Govinda Upadhyay">Govinda Upadhyay</h1>
+
+          <p class="title" style="width: fit-content; max-width: 100%; white-space: normal; line-height: 1.4; text-align: center; margin-inline: auto; padding: 5px 12px;">
+              Python &amp; SQL Instructor<br>M.Sc. CS &amp; Data Analytics
+          </p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:govindaupadhyay222@gmail.com" class="contact-link">govindaupadhyay222@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Institution</p>
+
+              <span class="contact-link">IIT Patna</span>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Shillong, Meghalaya, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Govinda222" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/govinda-upadhyay-350161286/" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="mailto:govindaupadhyay222@gmail.com" class="social-link" title="Email">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!-- #main-content -->
+    <div class="main-content">
+
+      <!-- #NAVBAR -->
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <!-- #ABOUT -->
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Python &amp; SQL Instructor currently pursuing my M.Sc. in Computer Science &amp; Data Analytics at IIT Patna, based in Shillong, Meghalaya. I enjoy turning complex analytical and software problems into clean, modular, and practical solutions.
+          </p>
+
+          <p>
+            My focus spans Object-Oriented Python development, relational database querying with SQL, NLP workflows, and Data Analytics. Alongside teaching programming fundamentals to learners, I actively build end-to-end CLI applications, data serialization pipelines, and algorithmic solutions on GitHub.
+          </p>
+        </section>
+
+
+        <!-- service -->
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="7" width="32" height="24" rx="4" stroke="#FFDB70" stroke-width="2.2"/>
+                  <path d="M14 15L9.5 19L14 23" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M26 15L30.5 19L26 23" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 13L18 25" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round"/>
+                  <path d="M13 35H27" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Python &amp; OOP Development</h4>
+
+                <p class="service-item-text">
+                  Designing modular, object-oriented Python applications, CRUD systems, and robust file-handling pipelines.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="20" cy="10" rx="12" ry="4.5" stroke="#FFDB70" stroke-width="2.2"/>
+                  <path d="M8 10V20C8 22.4853 13.3726 24.5 20 24.5C26.6274 24.5 32 22.4853 32 20V10" stroke="#FFDB70" stroke-width="2.2"/>
+                  <path d="M8 20V30C8 32.4853 13.3726 34.5 20 34.5C26.6274 34.5 32 32.4853 32 30V20" stroke="#FFDB70" stroke-width="2.2"/>
+                </svg>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analytics &amp; SQL</h4>
+
+                <p class="service-item-text">
+                  Querying relational databases, structuring datasets, and building analytical workflows in Python.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="10" cy="20" r="3.5" stroke="#FFDB70" stroke-width="2.2"/>
+                  <circle cx="20" cy="10" r="3.5" stroke="#FFDB70" stroke-width="2.2"/>
+                  <circle cx="20" cy="30" r="3.5" stroke="#FFDB70" stroke-width="2.2"/>
+                  <circle cx="30" cy="20" r="3.5" stroke="#FFDB70" stroke-width="2.2"/>
+                  <path d="M13 18L17.5 12.5M13 22L17.5 27.5M22.5 12.5L27 18M22.5 27.5L27 22M13.5 20H26.5" stroke="#FFDB70" stroke-width="2"/>
+                </svg>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">NLP &amp; Applied AI</h4>
+
+                <p class="service-item-text">
+                  Integrating Natural Language Processing APIs for sentiment analysis, entity recognition, and emotion detection.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 8L4 16L20 24L36 16L20 8Z" stroke="#FFDB70" stroke-width="2.2" stroke-linejoin="round"/>
+                  <path d="M10 19.5V28C10 28 14.5 32 20 32C25.5 32 30 28 30 28V19.5" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M35 16.5V25" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round"/>
+                </svg>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Technical Instruction</h4>
+
+                <p class="service-item-text">
+                  Mentoring students in Python programming, SQL querying, and problem-solving best practices.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!-- core focus / highlights -->
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Core Highlights</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;" data-testimonials-avatar>
+                  <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 7L4 15L20 23L36 15L20 7Z" stroke="#FFDB70" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M10 18.5V27.5C10 27.5 14.5 31.5 20 31.5C25.5 31.5 30 27.5 30 27.5V18.5" stroke="#FFDB70" stroke-width="2.4" stroke-linecap="round"/>
+                  </svg>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>M.Sc. CS &amp; Data Analytics</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Pursuing postgraduate studies at Indian Institute of Technology (IIT) Patna with a focus on computational problem solving, data analytics, statistical modeling, and machine learning.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;" data-testimonials-avatar>
+                  <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="5" y="8" width="30" height="22" rx="4" stroke="#FFDB70" stroke-width="2.4"/>
+                    <path d="M14 15L10 19L14 23M26 15L30 19L26 23" stroke="#FFDB70" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Python &amp; SQL Educator</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Experienced instructor helping students master core Python syntax, data structures, Object-Oriented Programming, and relational SQL queries through hands-on coding exercises.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;" data-testimonials-avatar>
+                  <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="20" r="3.5" stroke="#FFDB70" stroke-width="2.4"/>
+                    <circle cx="29" cy="12" r="3.5" stroke="#FFDB70" stroke-width="2.4"/>
+                    <circle cx="29" cy="28" r="3.5" stroke="#FFDB70" stroke-width="2.4"/>
+                    <path d="M14.5 18.5L25.5 13.5M14.5 21.5L25.5 26.5" stroke="#FFDB70" stroke-width="2.4"/>
+                  </svg>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>NLP &amp; CLI Engineering</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Built an OOP-driven NLP CLI suite supporting user authentication alongside Sentiment Analysis, Named Entity Recognition (NER), and Emotion Detection pipelines.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;" data-testimonials-avatar>
+                  <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 28L16 20L22 25L32 12" stroke="#FFDB70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 12H32V19" stroke="#FFDB70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Consistent Builder</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Actively shipping daily code, structured Jupyter notebooks, file serialization modules, and algorithmic problem sets on GitHub (github.com/Govinda222).
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!-- testimonials modal -->
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box" style="width: 65px; height: 65px; display: flex; align-items: center; justify-content: center;" data-modal-img>
+                <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 7L4 15L20 23L36 15L20 7Z" stroke="#FFDB70" stroke-width="2.4" stroke-linejoin="round"/>
+                </svg>
+              </figure>
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>M.Sc. CS &amp; Data Analytics</h4>
+
+              <time datetime="2026">IIT Patna</time>
+
+              <div data-modal-text>
+                <p>
+                  Pursuing postgraduate studies at Indian Institute of Technology (IIT) Patna with a focus on computational problem solving, data analytics, statistical modeling, and machine learning.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+      <!-- #RESUME -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">M.Sc. in Computer Science &amp; Data Analytics — IIT Patna</h4>
+
+              <span>Pursuing</span>
+
+              <p class="timeline-text">
+                Graduate coursework in Computer Science, Data Analytics, Python Programming, Algorithms, Statistical Analysis, and Machine Learning.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience &amp; Projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Python &amp; SQL Instructor</h4>
+
+              <span>Present</span>
+
+              <p class="timeline-text">
+                Teaching Python programming, data structures, Object-Oriented Programming, and SQL database querying through practical problem-solving sessions.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">NLPApp — Object-Oriented CLI Suite</h4>
+
+              <span>Python • OOP • NLP API</span>
+
+              <p class="timeline-text">
+                Engineered a menu-driven NLP CLI application with user authentication and multi-task text analysis (Sentiment Analysis, Named Entity Recognition, and Emotion Prediction).
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Student Management System (CRUD)</h4>
+
+              <span>Python • OOP • Data Structures</span>
+
+              <p class="timeline-text">
+                Built a dictionary-indexed student records manager supporting O(1) roll-number lookups, granular field-level updates, search, and record deletion.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python 3 &amp; Object-Oriented Programming</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SQL &amp; Relational Databases</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">File Handling, JSON &amp; Serialization</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">NLP &amp; Applied AI Workflows</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Git, GitHub &amp; Jupyter Notebooks</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+<!-- #PORTFOLIO -->
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>AI &amp; NLP</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Python &amp; Data</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web &amp; Prototypes</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>AI &amp; NLP</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Python &amp; Data</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web &amp; Prototypes</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="ai & nlp">
+              <a href="https://github.com/anjali9in/Netraksh-AI" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="240" fill="#18181b"/>
+                    <path d="M135 75H115V95M265 75H285V95M135 165H115V145M265 165H285V145" stroke="#FFDB70" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="200" cy="112" r="24" stroke="#FFDB70" stroke-width="3" fill="none"/>
+                    <path d="M162 162C168 144 182 138 200 138C218 138 232 144 238 162" stroke="#FFDB70" stroke-width="3" stroke-linecap="round" fill="none"/>
+                  </svg>
+                </figure>
+
+                <h3 class="project-title">Netraksh-AI — Offline Facial &amp; Liveness Detection</h3>
+
+                <p class="project-category">AI &amp; NLP</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="python & data">
+              <a href="https://github.com/Govinda222/python-for-data-science" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="240" fill="#18181b"/>
+                    <path d="M150 55H225L255 85V185H150V55Z" stroke="#FFDB70" stroke-width="3" fill="none" stroke-linejoin="round"/>
+                    <path d="M225 55V85H255" stroke="#FFDB70" stroke-width="3" stroke-linejoin="round"/>
+                    <text x="202" y="142" text-anchor="middle" fill="#FFDB70" font-family="monospace" font-weight="bold" font-size="22">.IPYNB</text>
+                  </svg>
+                </figure>
+
+                <h3 class="project-title">Python for Data Science &amp; Algorithms</h3>
+
+                <p class="project-category">Python &amp; Data</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="ai & nlp">
+              <a href="https://github.com/Govinda222" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="240" fill="#18181b"/>
+                    <circle cx="130" cy="120" r="16" stroke="#FFDB70" stroke-width="3" fill="none"/>
+                    <circle cx="200" cy="75" r="16" stroke="#FFDB70" stroke-width="3" fill="none"/>
+                    <circle cx="200" cy="165" r="16" stroke="#FFDB70" stroke-width="3" fill="none"/>
+                    <circle cx="270" cy="120" r="16" stroke="#FFDB70" stroke-width="3" fill="none"/>
+                    <path d="M144 111L186 84M144 129L186 156M214 84L256 111M214 156L256 129M146 120H254" stroke="#FFDB70" stroke-width="2.5"/>
+                  </svg>
+                </figure>
+
+                <h3 class="project-title">NLPApp — CLI Sentiment &amp; NER Suite</h3>
+
+                <p class="project-category">AI &amp; NLP</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web & prototypes">
+              <a href="https://github.com/Govinda222/smart-asset-management-system" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="240" fill="#18181b"/>
+                    <path d="M200 58L125 95H275L200 58Z" stroke="#FFDB70" stroke-width="3" stroke-linejoin="round" fill="none"/>
+                    <line x1="145" y1="95" x2="145" y2="162" stroke="#FFDB70" stroke-width="3"/>
+                    <line x1="182" y1="95" x2="182" y2="162" stroke="#FFDB70" stroke-width="3"/>
+                    <line x1="218" y1="95" x2="218" y2="162" stroke="#FFDB70" stroke-width="3"/>
+                    <line x1="255" y1="95" x2="255" y2="162" stroke="#FFDB70" stroke-width="3"/>
+                    <line x1="120" y1="168" x2="280" y2="168" stroke="#FFDB70" stroke-width="3" stroke-linecap="round"/>
+                  </svg>
+                </figure>
+
+                <h3 class="project-title">Smart Asset Management System</h3>
+
+                <p class="project-category">Web &amp; Prototypes</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web & prototypes">
+              <a href="https://github.com/Govinda222/nextrend-stock-prediction-app" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="240" fill="#18181b"/>
+                    <path d="M115 165L165 125L205 142L275 80" stroke="#FFDB70" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M245 80H275V110" stroke="#FFDB70" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <line x1="115" y1="175" x2="285" y2="175" stroke="#FFDB70" stroke-width="2" stroke-opacity="0.5"/>
+                  </svg>
+                </figure>
+
+                <h3 class="project-title">NexTrend — Stock Price Prediction App</h3>
+
+                <p class="project-category">Web &amp; Prototypes</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="python & data">
+              <a href="https://github.com/Govinda222/python-for-data-science" target="_blank" rel="noopener noreferrer">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="240" fill="#18181b"/>
+                    <rect x="110" y="55" width="180" height="130" rx="12" stroke="#FFDB70" stroke-width="3" fill="none"/>
+                    <line x1="110" y1="90" x2="290" y2="90" stroke="#FFDB70" stroke-width="2.5"/>
+                    <circle cx="132" cy="73" r="4" fill="#FFDB70"/>
+                    <circle cx="146" cy="73" r="4" fill="#FFDB70"/>
+                    <line x1="135" y1="118" x2="265" y2="118" stroke="#FFDB70" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="135" y1="142" x2="235" y2="142" stroke="#FFDB70" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="135" y1="166" x2="210" y2="166" stroke="#FFDB70" stroke-width="2.5" stroke-linecap="round"/>
+                  </svg>
+                </figure>
+
+                <h3 class="project-title">Student Management System (CRUD)</h3>
+
+                <p class="project-category">Python &amp; Data</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- #BLOG -->
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Notes &amp; Articles</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://github.com/Govinda222" target="_blank" rel="noopener noreferrer">
+
+                <figure class="blog-banner-box">
+                  <svg viewBox="0 0 400 220" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="220" fill="#18181b"/>
+                    <text x="200" y="105" text-anchor="middle" fill="#FFDB70" font-family="monospace" font-weight="bold" font-size="22">with open() as f:</text>
+                    <text x="200" y="138" text-anchor="middle" fill="#a1a1aa" font-family="sans-serif" font-size="14">Buffered I/O • JSON • Pickle</text>
+                  </svg>
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Python</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-11">Nov 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">File Handling, Buffered Chunks, JSON &amp; Pickling</h3>
+
+                  <p class="blog-text">
+                    Deep dive into context managers, binary vs. text modes, custom JSON encoders, and object serialization in Python.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/Govinda222" target="_blank" rel="noopener noreferrer">
+
+                <figure class="blog-banner-box">
+                  <svg viewBox="0 0 400 220" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="220" fill="#18181b"/>
+                    <text x="200" y="105" text-anchor="middle" fill="#FFDB70" font-family="monospace" font-weight="bold" font-size="22">class Student:</text>
+                    <text x="200" y="138" text-anchor="middle" fill="#a1a1aa" font-family="sans-serif" font-size="14">Modular OOP &amp; O(1) CRUD Design</text>
+                  </svg>
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">OOP</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-11">Nov 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Designing Clean Menu-Driven CRUD Systems</h3>
+
+                  <p class="blog-text">
+                    Structuring modular Python classes with dictionary-backed O(1) lookups and granular record updates.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://github.com/Govinda222" target="_blank" rel="noopener noreferrer">
+
+                <figure class="blog-banner-box">
+                  <svg viewBox="0 0 400 220" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="400" height="220" fill="#18181b"/>
+                    <text x="200" y="105" text-anchor="middle" fill="#FFDB70" font-family="monospace" font-weight="bold" font-size="22">f(n) -&gt; base + f(n-1)</text>
+                    <text x="200" y="138" text-anchor="middle" fill="#a1a1aa" font-family="sans-serif" font-size="14">Edit Distance • RLE • Euclid GCD</text>
+                  </svg>
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Algorithms</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2026-11">Nov 2026</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Thinking Recursively: Edit Distance, RLE &amp; GCD</h3>
+
+                  <p class="blog-text">
+                    Breaking down base cases and recursive steps across string edit distance, run-length encoding, and base conversion.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- #CONTACT -->
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57581.53129795181!2d91.8535547!3d25.5787726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37507e8f34bd207f%3A0x62482df7108f882b!2sShillong%2C%20Meghalaya!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy" title="Shillong, Meghalaya Map"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="mailto:govindaupadhyay222@gmail.com" method="post" enctype="text/plain" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <!-- custom js link -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
