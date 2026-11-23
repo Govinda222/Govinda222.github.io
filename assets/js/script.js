@@ -87,6 +87,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+const formStatus = document.querySelector("[data-form-status]");
 
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
@@ -97,6 +98,32 @@ for (let i = 0; i < formInputs.length; i++) {
     }
   });
 }
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  formBtn.setAttribute("disabled", "");
+  formStatus.textContent = "Sending message...";
+
+  try {
+    const formData = new FormData(form);
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+    const result = await response.json();
+
+    if (result.success) {
+      formStatus.textContent = "Message sent! Thanks for reaching out — I'll reply soon.";
+      form.reset();
+    } else {
+      formStatus.textContent = "Something went wrong. Please email govindaupadhyay222@gmail.com directly.";
+      formBtn.removeAttribute("disabled");
+    }
+  } catch (err) {
+    formStatus.textContent = "Network error. Please email govindaupadhyay222@gmail.com directly.";
+    formBtn.removeAttribute("disabled");
+  }
+});
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
