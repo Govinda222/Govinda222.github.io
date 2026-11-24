@@ -7,6 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Govinda Upadhyay | CS &amp; Data Analytics Portfolio</title>
 
+  <!-- Prevent theme flash on load -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      if (savedTheme === "light" || (!savedTheme && prefersLight)) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+
   <!-- inline SVG favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e1e1f'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' fill='%23ffdb70' font-family='sans-serif' font-weight='bold' font-size='28'%3EGU%3C/text%3E%3C/svg%3E">
 
@@ -32,13 +43,13 @@
         <figure class="avatar-box" style="overflow: hidden; display: flex; align-items: center; justify-content: center;">
           <img src="https://github.com/Govinda222.png" alt="Govinda Upadhyay" width="80" style="border-radius: 20px; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
           <svg style="display: none;" width="80" height="80" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="120" height="120" rx="24" fill="#232325"/>
-            <rect x="28" y="34" width="64" height="44" rx="8" stroke="#FFDB70" stroke-width="4"/>
-            <path d="M48 50L39 56L48 62" stroke="#FFDB70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M72 50L81 56L72 62" stroke="#FFDB70" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M63 46L57 66" stroke="#FFDB70" stroke-width="4" stroke-linecap="round"/>
-            <path d="M44 88H76" stroke="#FFDB70" stroke-width="4" stroke-linecap="round"/>
-            <path d="M60 78V88" stroke="#FFDB70" stroke-width="4" stroke-linecap="round"/>
+            <rect width="120" height="120" rx="24" fill="var(--eerie-black-1)"/>
+            <rect x="28" y="34" width="64" height="44" rx="8" stroke="var(--orange-yellow-crayola)" stroke-width="4"/>
+            <path d="M48 50L39 56L48 62" stroke="var(--orange-yellow-crayola)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M72 50L81 56L72 62" stroke="var(--orange-yellow-crayola)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M63 46L57 66" stroke="var(--orange-yellow-crayola)" stroke-width="4" stroke-linecap="round"/>
+            <path d="M44 88H76" stroke="var(--orange-yellow-crayola)" stroke-width="4" stroke-linecap="round"/>
+            <path d="M60 78V88" stroke="var(--orange-yellow-crayola)" stroke-width="4" stroke-linecap="round"/>
           </svg>
         </figure>
 
@@ -165,6 +176,12 @@
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
+          <li class="navbar-item">
+            <button class="theme-toggle-btn" data-theme-btn aria-label="Toggle light and dark theme" title="Switch theme">
+              <ion-icon name="sunny-outline" data-theme-icon></ion-icon>
+            </button>
+          </li>
+
         </ul>
 
       </nav>
@@ -199,11 +216,11 @@
 
               <div class="service-icon-box">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x="4" y="7" width="32" height="24" rx="4" stroke="#FFDB70" stroke-width="2.2"/>
-                  <path d="M14 15L9.5 19L14 23" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M26 15L30.5 19L26 23" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M22 13L18 25" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round"/>
-                  <path d="M13 35H27" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round"/>
+                  <rect x="4" y="7" width="32" height="24" rx="4" stroke="var(--orange-yellow-crayola)" stroke-width="2.2"/>
+                  <path d="M14 15L9.5 19L14 23" stroke="var(--orange-yellow-crayola)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M26 15L30.5 19L26 23" stroke="var(--orange-yellow-crayola)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22 13L18 25" stroke="var(--orange-yellow-crayola)" stroke-width="2.2" stroke-linecap="round"/>
+                  <path d="M13 35H27" stroke="var(--orange-yellow-crayola)" stroke-width="2.2" stroke-linecap="round"/>
                 </svg>
               </div>
 
@@ -221,9 +238,9 @@
 
               <div class="service-icon-box">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <ellipse cx="20" cy="10" rx="12" ry="4.5" stroke="#FFDB70" stroke-width="2.2"/>
-                  <path d="M8 10V20C8 22.4853 13.3726 24.5 20 24.5C26.6274 24.5 32 22.4853 32 20V10" stroke="#FFDB70" stroke-width="2.2"/>
-                  <path d="M8 20V30C8 32.4853 13.3726 34.5 20 34.5C26.6274 34.5 32 32.4853 32 30V20" stroke="#FFDB70" stroke-width="2.2"/>
+                  <ellipse cx="20" cy="10" rx="12" ry="4.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.2"/>
+                  <path d="M8 10V20C8 22.4853 13.3726 24.5 20 24.5C26.6274 24.5 32 22.4853 32 20V10" stroke="var(--orange-yellow-crayola)" stroke-width="2.2"/>
+                  <path d="M8 20V30C8 32.4853 13.3726 34.5 20 34.5C26.6274 34.5 32 32.4853 32 30V20" stroke="var(--orange-yellow-crayola)" stroke-width="2.2"/>
                 </svg>
               </div>
 
@@ -241,11 +258,11 @@
 
               <div class="service-icon-box">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="10" cy="20" r="3.5" stroke="#FFDB70" stroke-width="2.2"/>
-                  <circle cx="20" cy="10" r="3.5" stroke="#FFDB70" stroke-width="2.2"/>
-                  <circle cx="20" cy="30" r="3.5" stroke="#FFDB70" stroke-width="2.2"/>
-                  <circle cx="30" cy="20" r="3.5" stroke="#FFDB70" stroke-width="2.2"/>
-                  <path d="M13 18L17.5 12.5M13 22L17.5 27.5M22.5 12.5L27 18M22.5 27.5L27 22M13.5 20H26.5" stroke="#FFDB70" stroke-width="2"/>
+                  <circle cx="10" cy="20" r="3.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.2"/>
+                  <circle cx="20" cy="10" r="3.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.2"/>
+                  <circle cx="20" cy="30" r="3.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.2"/>
+                  <circle cx="30" cy="20" r="3.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.2"/>
+                  <path d="M13 18L17.5 12.5M13 22L17.5 27.5M22.5 12.5L27 18M22.5 27.5L27 22M13.5 20H26.5" stroke="var(--orange-yellow-crayola)" stroke-width="2"/>
                 </svg>
               </div>
 
@@ -263,9 +280,9 @@
 
               <div class="service-icon-box">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 8L4 16L20 24L36 16L20 8Z" stroke="#FFDB70" stroke-width="2.2" stroke-linejoin="round"/>
-                  <path d="M10 19.5V28C10 28 14.5 32 20 32C25.5 32 30 28 30 28V19.5" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M35 16.5V25" stroke="#FFDB70" stroke-width="2.2" stroke-linecap="round"/>
+                  <path d="M20 8L4 16L20 24L36 16L20 8Z" stroke="var(--orange-yellow-crayola)" stroke-width="2.2" stroke-linejoin="round"/>
+                  <path d="M10 19.5V28C10 28 14.5 32 20 32C25.5 32 30 28 30 28V19.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M35 16.5V25" stroke="var(--orange-yellow-crayola)" stroke-width="2.2" stroke-linecap="round"/>
                 </svg>
               </div>
 
@@ -296,8 +313,8 @@
 
                 <figure class="testimonials-avatar-box" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;" data-testimonials-avatar>
                   <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 7L4 15L20 23L36 15L20 7Z" stroke="#FFDB70" stroke-width="2.4" stroke-linejoin="round"/>
-                    <path d="M10 18.5V27.5C10 27.5 14.5 31.5 20 31.5C25.5 31.5 30 27.5 30 27.5V18.5" stroke="#FFDB70" stroke-width="2.4" stroke-linecap="round"/>
+                    <path d="M20 7L4 15L20 23L36 15L20 7Z" stroke="var(--orange-yellow-crayola)" stroke-width="2.4" stroke-linejoin="round"/>
+                    <path d="M10 18.5V27.5C10 27.5 14.5 31.5 20 31.5C25.5 31.5 30 27.5 30 27.5V18.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.4" stroke-linecap="round"/>
                   </svg>
                 </figure>
 
@@ -317,8 +334,8 @@
 
                 <figure class="testimonials-avatar-box" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;" data-testimonials-avatar>
                   <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="5" y="8" width="30" height="22" rx="4" stroke="#FFDB70" stroke-width="2.4"/>
-                    <path d="M14 15L10 19L14 23M26 15L30 19L26 23" stroke="#FFDB70" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect x="5" y="8" width="30" height="22" rx="4" stroke="var(--orange-yellow-crayola)" stroke-width="2.4"/>
+                    <path d="M14 15L10 19L14 23M26 15L30 19L26 23" stroke="var(--orange-yellow-crayola)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </figure>
 
@@ -338,10 +355,10 @@
 
                 <figure class="testimonials-avatar-box" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;" data-testimonials-avatar>
                   <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="11" cy="20" r="3.5" stroke="#FFDB70" stroke-width="2.4"/>
-                    <circle cx="29" cy="12" r="3.5" stroke="#FFDB70" stroke-width="2.4"/>
-                    <circle cx="29" cy="28" r="3.5" stroke="#FFDB70" stroke-width="2.4"/>
-                    <path d="M14.5 18.5L25.5 13.5M14.5 21.5L25.5 26.5" stroke="#FFDB70" stroke-width="2.4"/>
+                    <circle cx="11" cy="20" r="3.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.4"/>
+                    <circle cx="29" cy="12" r="3.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.4"/>
+                    <circle cx="29" cy="28" r="3.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.4"/>
+                    <path d="M14.5 18.5L25.5 13.5M14.5 21.5L25.5 26.5" stroke="var(--orange-yellow-crayola)" stroke-width="2.4"/>
                   </svg>
                 </figure>
 
@@ -361,8 +378,8 @@
 
                 <figure class="testimonials-avatar-box" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;" data-testimonials-avatar>
                   <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8 28L16 20L22 25L32 12" stroke="#FFDB70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M25 12H32V19" stroke="#FFDB70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 28L16 20L22 25L32 12" stroke="var(--orange-yellow-crayola)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M25 12H32V19" stroke="var(--orange-yellow-crayola)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </figure>
 
@@ -396,7 +413,7 @@
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box" style="width: 65px; height: 65px; display: flex; align-items: center; justify-content: center;" data-modal-img>
                 <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M20 7L4 15L20 23L36 15L20 7Z" stroke="#FFDB70" stroke-width="2.4" stroke-linejoin="round"/>
+                  <path d="M20 7L4 15L20 23L36 15L20 7Z" stroke="var(--orange-yellow-crayola)" stroke-width="2.4" stroke-linejoin="round"/>
                 </svg>
               </figure>
             </div>
@@ -587,7 +604,7 @@
       </article>
 
 
-<!-- #PORTFOLIO -->
+      <!-- #PORTFOLIO -->
       <article class="portfolio" data-page="portfolio">
 
         <header>
@@ -661,10 +678,10 @@
                   </div>
 
                   <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="240" fill="#18181b"/>
-                    <path d="M135 75H115V95M265 75H285V95M135 165H115V145M265 165H285V145" stroke="#FFDB70" stroke-width="3" stroke-linecap="round"/>
-                    <circle cx="200" cy="112" r="24" stroke="#FFDB70" stroke-width="3" fill="none"/>
-                    <path d="M162 162C168 144 182 138 200 138C218 138 232 144 238 162" stroke="#FFDB70" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    <rect width="400" height="240" fill="var(--svg-card-bg)"/>
+                    <path d="M135 75H115V95M265 75H285V95M135 165H115V145M265 165H285V145" stroke="var(--orange-yellow-crayola)" stroke-width="3" stroke-linecap="round"/>
+                    <circle cx="200" cy="112" r="24" stroke="var(--orange-yellow-crayola)" stroke-width="3" fill="none"/>
+                    <path d="M162 162C168 144 182 138 200 138C218 138 232 144 238 162" stroke="var(--orange-yellow-crayola)" stroke-width="3" stroke-linecap="round" fill="none"/>
                   </svg>
                 </figure>
 
@@ -684,10 +701,10 @@
                   </div>
 
                   <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="240" fill="#18181b"/>
-                    <path d="M150 55H225L255 85V185H150V55Z" stroke="#FFDB70" stroke-width="3" fill="none" stroke-linejoin="round"/>
-                    <path d="M225 55V85H255" stroke="#FFDB70" stroke-width="3" stroke-linejoin="round"/>
-                    <text x="202" y="142" text-anchor="middle" fill="#FFDB70" font-family="monospace" font-weight="bold" font-size="22">.IPYNB</text>
+                    <rect width="400" height="240" fill="var(--svg-card-bg)"/>
+                    <path d="M150 55H225L255 85V185H150V55Z" stroke="var(--orange-yellow-crayola)" stroke-width="3" fill="none" stroke-linejoin="round"/>
+                    <path d="M225 55V85H255" stroke="var(--orange-yellow-crayola)" stroke-width="3" stroke-linejoin="round"/>
+                    <text x="202" y="142" text-anchor="middle" fill="var(--orange-yellow-crayola)" font-family="monospace" font-weight="bold" font-size="22">.IPYNB</text>
                   </svg>
                 </figure>
 
@@ -707,12 +724,12 @@
                   </div>
 
                   <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="240" fill="#18181b"/>
-                    <circle cx="130" cy="120" r="16" stroke="#FFDB70" stroke-width="3" fill="none"/>
-                    <circle cx="200" cy="75" r="16" stroke="#FFDB70" stroke-width="3" fill="none"/>
-                    <circle cx="200" cy="165" r="16" stroke="#FFDB70" stroke-width="3" fill="none"/>
-                    <circle cx="270" cy="120" r="16" stroke="#FFDB70" stroke-width="3" fill="none"/>
-                    <path d="M144 111L186 84M144 129L186 156M214 84L256 111M214 156L256 129M146 120H254" stroke="#FFDB70" stroke-width="2.5"/>
+                    <rect width="400" height="240" fill="var(--svg-card-bg)"/>
+                    <circle cx="130" cy="120" r="16" stroke="var(--orange-yellow-crayola)" stroke-width="3" fill="none"/>
+                    <circle cx="200" cy="75" r="16" stroke="var(--orange-yellow-crayola)" stroke-width="3" fill="none"/>
+                    <circle cx="200" cy="165" r="16" stroke="var(--orange-yellow-crayola)" stroke-width="3" fill="none"/>
+                    <circle cx="270" cy="120" r="16" stroke="var(--orange-yellow-crayola)" stroke-width="3" fill="none"/>
+                    <path d="M144 111L186 84M144 129L186 156M214 84L256 111M214 156L256 129M146 120H254" stroke="var(--orange-yellow-crayola)" stroke-width="2.5"/>
                   </svg>
                 </figure>
 
@@ -732,13 +749,13 @@
                   </div>
 
                   <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="240" fill="#18181b"/>
-                    <path d="M200 58L125 95H275L200 58Z" stroke="#FFDB70" stroke-width="3" stroke-linejoin="round" fill="none"/>
-                    <line x1="145" y1="95" x2="145" y2="162" stroke="#FFDB70" stroke-width="3"/>
-                    <line x1="182" y1="95" x2="182" y2="162" stroke="#FFDB70" stroke-width="3"/>
-                    <line x1="218" y1="95" x2="218" y2="162" stroke="#FFDB70" stroke-width="3"/>
-                    <line x1="255" y1="95" x2="255" y2="162" stroke="#FFDB70" stroke-width="3"/>
-                    <line x1="120" y1="168" x2="280" y2="168" stroke="#FFDB70" stroke-width="3" stroke-linecap="round"/>
+                    <rect width="400" height="240" fill="var(--svg-card-bg)"/>
+                    <path d="M200 58L125 95H275L200 58Z" stroke="var(--orange-yellow-crayola)" stroke-width="3" stroke-linejoin="round" fill="none"/>
+                    <line x1="145" y1="95" x2="145" y2="162" stroke="var(--orange-yellow-crayola)" stroke-width="3"/>
+                    <line x1="182" y1="95" x2="182" y2="162" stroke="var(--orange-yellow-crayola)" stroke-width="3"/>
+                    <line x1="218" y1="95" x2="218" y2="162" stroke="var(--orange-yellow-crayola)" stroke-width="3"/>
+                    <line x1="255" y1="95" x2="255" y2="162" stroke="var(--orange-yellow-crayola)" stroke-width="3"/>
+                    <line x1="120" y1="168" x2="280" y2="168" stroke="var(--orange-yellow-crayola)" stroke-width="3" stroke-linecap="round"/>
                   </svg>
                 </figure>
 
@@ -758,10 +775,10 @@
                   </div>
 
                   <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="240" fill="#18181b"/>
-                    <path d="M115 165L165 125L205 142L275 80" stroke="#FFDB70" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                    <path d="M245 80H275V110" stroke="#FFDB70" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-                    <line x1="115" y1="175" x2="285" y2="175" stroke="#FFDB70" stroke-width="2" stroke-opacity="0.5"/>
+                    <rect width="400" height="240" fill="var(--svg-card-bg)"/>
+                    <path d="M115 165L165 125L205 142L275 80" stroke="var(--orange-yellow-crayola)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M245 80H275V110" stroke="var(--orange-yellow-crayola)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <line x1="115" y1="175" x2="285" y2="175" stroke="var(--orange-yellow-crayola)" stroke-width="2" stroke-opacity="0.5"/>
                   </svg>
                 </figure>
 
@@ -781,14 +798,14 @@
                   </div>
 
                   <svg viewBox="0 0 400 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="240" fill="#18181b"/>
-                    <rect x="110" y="55" width="180" height="130" rx="12" stroke="#FFDB70" stroke-width="3" fill="none"/>
-                    <line x1="110" y1="90" x2="290" y2="90" stroke="#FFDB70" stroke-width="2.5"/>
-                    <circle cx="132" cy="73" r="4" fill="#FFDB70"/>
-                    <circle cx="146" cy="73" r="4" fill="#FFDB70"/>
-                    <line x1="135" y1="118" x2="265" y2="118" stroke="#FFDB70" stroke-width="2.5" stroke-linecap="round"/>
-                    <line x1="135" y1="142" x2="235" y2="142" stroke="#FFDB70" stroke-width="2.5" stroke-linecap="round"/>
-                    <line x1="135" y1="166" x2="210" y2="166" stroke="#FFDB70" stroke-width="2.5" stroke-linecap="round"/>
+                    <rect width="400" height="240" fill="var(--svg-card-bg)"/>
+                    <rect x="110" y="55" width="180" height="130" rx="12" stroke="var(--orange-yellow-crayola)" stroke-width="3" fill="none"/>
+                    <line x1="110" y1="90" x2="290" y2="90" stroke="var(--orange-yellow-crayola)" stroke-width="2.5"/>
+                    <circle cx="132" cy="73" r="4" fill="var(--orange-yellow-crayola)"/>
+                    <circle cx="146" cy="73" r="4" fill="var(--orange-yellow-crayola)"/>
+                    <line x1="135" y1="118" x2="265" y2="118" stroke="var(--orange-yellow-crayola)" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="135" y1="142" x2="235" y2="142" stroke="var(--orange-yellow-crayola)" stroke-width="2.5" stroke-linecap="round"/>
+                    <line x1="135" y1="166" x2="210" y2="166" stroke="var(--orange-yellow-crayola)" stroke-width="2.5" stroke-linecap="round"/>
                   </svg>
                 </figure>
 
@@ -822,9 +839,9 @@
 
                 <figure class="blog-banner-box">
                   <svg viewBox="0 0 400 220" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="220" fill="#18181b"/>
-                    <text x="200" y="105" text-anchor="middle" fill="#FFDB70" font-family="monospace" font-weight="bold" font-size="22">with open() as f:</text>
-                    <text x="200" y="138" text-anchor="middle" fill="#a1a1aa" font-family="sans-serif" font-size="14">Buffered I/O • JSON • Pickle</text>
+                    <rect width="400" height="220" fill="var(--svg-card-bg)"/>
+                    <text x="200" y="105" text-anchor="middle" fill="var(--orange-yellow-crayola)" font-family="monospace" font-weight="bold" font-size="22">with open() as f:</text>
+                    <text x="200" y="138" text-anchor="middle" fill="var(--light-gray-70)" font-family="sans-serif" font-size="14">Buffered I/O • JSON • Pickle</text>
                   </svg>
                 </figure>
 
@@ -854,9 +871,9 @@
 
                 <figure class="blog-banner-box">
                   <svg viewBox="0 0 400 220" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="220" fill="#18181b"/>
-                    <text x="200" y="105" text-anchor="middle" fill="#FFDB70" font-family="monospace" font-weight="bold" font-size="22">class Student:</text>
-                    <text x="200" y="138" text-anchor="middle" fill="#a1a1aa" font-family="sans-serif" font-size="14">Modular OOP &amp; O(1) CRUD Design</text>
+                    <rect width="400" height="220" fill="var(--svg-card-bg)"/>
+                    <text x="200" y="105" text-anchor="middle" fill="var(--orange-yellow-crayola)" font-family="monospace" font-weight="bold" font-size="22">class Student:</text>
+                    <text x="200" y="138" text-anchor="middle" fill="var(--light-gray-70)" font-family="sans-serif" font-size="14">Modular OOP &amp; O(1) CRUD Design</text>
                   </svg>
                 </figure>
 
@@ -886,9 +903,9 @@
 
                 <figure class="blog-banner-box">
                   <svg viewBox="0 0 400 220" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="400" height="220" fill="#18181b"/>
-                    <text x="200" y="105" text-anchor="middle" fill="#FFDB70" font-family="monospace" font-weight="bold" font-size="22">f(n) -&gt; base + f(n-1)</text>
-                    <text x="200" y="138" text-anchor="middle" fill="#a1a1aa" font-family="sans-serif" font-size="14">Edit Distance • RLE • Euclid GCD</text>
+                    <rect width="400" height="220" fill="var(--svg-card-bg)"/>
+                    <text x="200" y="105" text-anchor="middle" fill="var(--orange-yellow-crayola)" font-family="monospace" font-weight="bold" font-size="22">f(n) -&gt; base + f(n-1)</text>
+                    <text x="200" y="138" text-anchor="middle" fill="var(--light-gray-70)" font-family="sans-serif" font-size="14">Edit Distance • RLE • Euclid GCD</text>
                   </svg>
                 </figure>
 
@@ -961,7 +978,7 @@
 
           </form>
 
-          <p data-form-status style="margin-top: 15px; font-size: 14px; color: #ffdb70;"></p>
+          <p data-form-status style="margin-top: 15px; font-size: 14px; color: var(--orange-yellow-crayola);"></p>
 
         </section>
 
