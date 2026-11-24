@@ -5,29 +5,28 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 // theme toggle variables & initialization
 const themeBtn = document.querySelector("[data-theme-btn]");
-const themeIcon = document.querySelector("[data-theme-icon]");
 
 const applyTheme = function (theme) {
   if (theme === "light") {
     document.documentElement.setAttribute("data-theme", "light");
-    if (themeIcon) themeIcon.setAttribute("name", "moon-outline");
     if (themeBtn) themeBtn.setAttribute("title", "Switch to dark mode");
   } else {
     document.documentElement.removeAttribute("data-theme");
-    if (themeIcon) themeIcon.setAttribute("name", "sunny-outline");
     if (themeBtn) themeBtn.setAttribute("title", "Switch to light mode");
   }
+  try {
+    localStorage.setItem("portfolio-theme", theme);
+  } catch (e) {}
 };
 
-// sync icon with initial theme on load
+// sync title with initial theme on load
 applyTheme(document.documentElement.getAttribute("data-theme") === "light" ? "light" : "dark");
 
 if (themeBtn) {
-  themeBtn.addEventListener("click", function () {
+  themeBtn.addEventListener("click", function (e) {
+    e.preventDefault();
     const isLight = document.documentElement.getAttribute("data-theme") === "light";
-    const nextTheme = isLight ? "dark" : "light";
-    applyTheme(nextTheme);
-    localStorage.setItem("portfolio-theme", nextTheme);
+    applyTheme(isLight ? "dark" : "light");
   });
 }
 
